@@ -6,9 +6,7 @@ import (
 )
 
 func main() {
-	oauthConfig := &oauth2.Config{
-		// Your OAuth2 configuration here
-	}
+	oauthConfig := &oauth2.Config{}
 
 	r := routers.SetupRouter(oauthConfig)
 	r.Run(":8080")
