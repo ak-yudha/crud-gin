@@ -28,7 +28,6 @@ func SetupRouter(oauthConfig *oauth2.Config) *gin.Engine {
 		v1.POST("/register", userController.RegisterUser)
 		v1.GET("/users", userController.GetUsers)
 		v1.GET("/users/:id", userController.GetUser)
-		v1.GET("/users", userController.GetUsers)
 		v1.PUT("/users/:id", userController.UpdateUser)
 		v1.DELETE("/users/:id", userController.DeleteUser)
 	}
